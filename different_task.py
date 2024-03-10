@@ -1,0 +1,71 @@
+# ------ zad 1 
+
+import re
+description = 'Playway: Playway to producent gier komputerowych.'
+
+# Zamień wszystkie znaki na małe, usuń dwukropek
+describe_small = description.lower()
+
+# tekst "Playway: Playway to producent gier komputerowych." - słowa wrzucone do listy
+list_describe = re.split(" ", describe_small)
+
+# Słowo prawidłowe - bez dwukropka 
+playway = re.split(" ", list_describe[0][:7])
+
+# wszytsko Bez playway
+without_playway = list_describe[1:]
+
+# Nowa lista 
+newList = playway + without_playway
+
+# Unikalne słowa 
+unique_list = list({word for word in newList})
+
+print(len(unique_list))
+
+print('---')
+
+# ------ zad 2
+# Wersja Pythona 
+import sys
+
+print(sys.version)
+
+print('---')
+
+
+# ------ zad 3
+# Znajdź sumę wszystkich liczb podzielnych przez 5 lub 7 mniejszych niż 100. 
+# Przedstawinie w postaci funkcji o nazwie calculate(). 
+
+def calculate():
+    numer_99 = range(0, 100)
+    number = []
+    for num in numer_99:
+        if (num % 5 == 0) | (num % 7 == 0):
+            number.append(num)
+    print(sum(number))
+
+calculate()
+
+print('---')
+
+# ------ zad 4
+range_1000000 = range(0, 1000000)
+number_1000000 = []
+newNumber = []
+evenNumber = []
+
+
+for i in range(2, len(number_1000000)):
+    newnum = number_1000000[i - 1] + number_1000000[i - 2]
+    newNumber.append(newnum)
+
+newNumber = [0, 1] + newNumber
+
+for even in newNumber:
+    if even % 2 == 0:
+        evenNumber.append(even)
+
+print(evenNumber)
+
