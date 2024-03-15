@@ -69,3 +69,39 @@ for even in newNumber:
 
 print(evenNumber)
 
+print('---')
+
+# sprawdź czy podane zmienne przechowują obiekty typu tuple (krotka).
+var1 = 'Python'
+var2 = ('Python')
+var3 = ('Python',)
+var4 = ['Python']
+var5 = {'Python'}
+
+checkVar = []
+
+for number in range(1, 6):
+    variable_name = f'var{number}'
+    checkVar.append(eval(variable_name))
+
+for isTuple in checkVar:
+    print(isinstance(isTuple, tuple))
+
+print('---')
+
+# zwróć pierwszą i ostatnią literę ułożonych w kolejności alfabetycznej liter z listy characters
+characters = ['k', 'b', 'c', 'j', 'z', 'w']
+
+print(f"First character: {sorted(characters)[0]}")
+print(f"Last character: {sorted(characters)[-1]}")
+
+print('---')
+
+#  utwórz listę składającą się z tych krotek - połączenie tupli w listę 
+ticker = ('TEN', 'PLW', 'CDR')
+full_name = ('Ten Square Games', 'Playway', 'CD Projekt')
+
+print(list(zip(ticker, full_name)))
+
+print('---')
+
