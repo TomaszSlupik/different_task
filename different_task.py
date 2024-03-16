@@ -105,3 +105,25 @@ print(list(zip(ticker, full_name)))
 
 print('---')
 
+# Przedstawione listy przedstaw w 1 liście - rozpakuj listę i napisz funkcję 
+items = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+def flatten (list):
+    newItems = []
+
+    for li in items:
+        for el in li:
+            newItems.append(el)
+    return newItems
+
+print(flatten(items))
+
+# II sposób 
+itemsComp = [el for number in items for el in number]
+print(itemsComp)
+
+print ('---')
