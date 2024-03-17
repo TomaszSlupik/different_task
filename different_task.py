@@ -127,3 +127,25 @@ itemsComp = [el for number in items for el in number]
 print(itemsComp)
 
 print ('---')
+
+#  funkcja o nazwie transfer_zeros(), która 
+# przyjmuje za argument listę i przesuwa wszystkie zera w tej liście na jej koniec.
+
+myList = [3, 4, 0, 2, 0, 5, 1, 6, 2]
+
+def transfer_zeros(list):
+    listZero = []
+
+    for li in myList:
+        if li == 0:
+            listZero.append(li)
+            myList.remove(li) 
+
+    sortedListWithZero = [myList, listZero]
+    sortedListWithZero = [ele for num in sortedListWithZero for ele in num]
+
+    return sortedListWithZero
+
+print(transfer_zeros(myList))
+
+print ('---')
