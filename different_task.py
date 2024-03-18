@@ -149,3 +149,25 @@ def transfer_zeros(list):
 print(transfer_zeros(myList))
 
 print ('---')
+
+# funkcja która przyjmie trzy argumenty: start, stop, step 
+# i wygeneruje listę składającą się z liczb całkowitych większych 
+# lub równych start oraz mniejszych niż stop. 
+# Parametr step domyślnie przyjmuje wartość 1 i oznacza rozmiar kroku.
+
+def arange(start, stop, step=1):
+    arangeList = []
+    number = start
+    
+    while number < stop:
+        arangeList.append(number)
+        number += step
+
+    return arangeList
+
+
+print(arange(0, 10))
+print(arange(0, 10, 2))
+print(arange(4, 20, 4))
+
+print('---')
