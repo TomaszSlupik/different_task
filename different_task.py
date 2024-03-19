@@ -171,3 +171,16 @@ print(arange(0, 10, 2))
 print(arange(4, 20, 4))
 
 print('---')
+
+# Funkcja ta ma za zadanie połączyć podane listy w jedną tak jak poniżej (tzw. łącznie po elementach):
+l1 = [[1], [2]]
+l2 = [[3], [4]]
+
+def concat (first, second):
+    firstList = first[0] + second[0]
+    secondList = first[1] + second[1]
+    return [firstList, secondList]
+
+print(concat(l1, l2))
+
+print('---')
