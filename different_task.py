@@ -184,3 +184,21 @@ def concat (first, second):
 print(concat(l1, l2))
 
 print('---')
+
+# funkcja która przyjmie za argument liczbę naturalną 
+# i zwróci macierz jednostkową podanego stopnia reprezentowaną jako listę zagnieżdżoną.
+
+def identity (num):
+    listWithZero = [0] * num
+    number = 0
+    result = []
+    while num > number:
+        listWithZero[number] = 1
+        result.append(listWithZero.copy())
+        listWithZero[number] = 0 
+        number += 1
+    return result
+
+print(identity(5))
+
+print('---')
