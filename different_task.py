@@ -223,3 +223,15 @@ print(fill_value(3, 3 , 'Tomek'))
 
 print('---')
 
+# funkcja, która z podanej listy wyciągnie top n największych wartości.
+listWithNumber = [4, 5, 2, 9, 5, 2, 8, 2, 8, 10]
+listWithNumberSecond = [400, 100, 900, 200]
+
+def top_n (items, n):
+    listSorted = sorted(items, reverse=True)
+    return listSorted[:n]
+
+print(top_n(listWithNumber, 3))
+print(top_n(listWithNumberSecond, 2))
+
+print('---')
