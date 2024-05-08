@@ -202,3 +202,24 @@ def identity (num):
 print(identity(5))
 
 print('---')
+
+
+# funkcja która zwróci dwuwymiarową tablicę o rozmiarze height x width i wypełni ją stałą wartością value.
+# przykład:
+# fill_value(4, 2, 'a')
+# [OUT]: [['a', 'a'], ['a', 'a'], ['a', 'a'], ['a', 'a']]
+
+def fill_value(height, width, value):
+    number = 0
+    result = []
+    while height > number:
+        result.append([value] * width)
+        number += 1
+    return result
+
+print(fill_value(4, 2 , 'a'))
+print(fill_value(2, 3 , 255))
+print(fill_value(3, 3 , 'Tomek'))
+
+print('---')
+
