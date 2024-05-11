@@ -290,3 +290,17 @@ print("#".join(listFruit))
 print("-".join(listFruit))
 
 print('---')
+
+# Program powinien następnie obliczyć obniżoną cenę przedmiotu o podany rabat i wydrukować na konsoli komunikat zawierający te informacje.
+store_name = 'Shopshoe'
+item_name = 'Running shoes'
+item_price = 100.00
+item_discount = 0.30
+item_count = item_price - (item_price * item_discount)
+
+print(f"Welcome to {store_name}!")
+print("-" * 50)
+print(f"Today's special is the {item_name}, which normally costs ${item_price:.2f}.")
+print(f"But for a limited time, you can get it for ${item_count:.2f} ({(item_discount * 100) :.0f}% off)!")
+
+print('---')
