@@ -277,3 +277,16 @@ def checkType (checkMyList, myType):
 print(checkType(checkMyList, myType))
 
 print('---')
+
+# Złączenie w różnych konfiguracjach 
+fruit1 = 'apple'
+fruit2 = 'banana'
+fruit3 = 'cherry'
+
+listFruit = [fruit1, fruit2, fruit3]
+
+print(",".join(listFruit))
+print("#".join(listFruit))
+print("-".join(listFruit))
+
+print('---')
