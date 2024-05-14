@@ -248,3 +248,32 @@ def count_none (listNone):
 print(count_none(listWithNone))
 
 print('---')
+
+"""
+sprawdź czy podane zmienne są odpowiednio typu:
+tuple
+str
+list
+set
+float
+"""
+followers = ['john', 'jane', 'jacob', 'jessica', 'jenny']
+profile_picture = 'https://example.com/profile.jpg'
+post_ids = [1, 2, 3, 4, 5]
+bio = 'Travel enthusiast | Photographer | Nature lover'
+timestamp = 1649499360
+
+checkMyList = [followers, profile_picture, post_ids, bio, timestamp]
+myType = [tuple, str, list, set, float]
+
+def checkType (checkMyList, myType):
+    myResult = []
+    for value, expextedType in zip(checkMyList, myType):
+        result = isinstance(value, expextedType)
+        myResult.append(result)
+    
+    return myResult
+
+print(checkType(checkMyList, myType))
+
+print('---')
