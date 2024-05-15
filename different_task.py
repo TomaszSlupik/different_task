@@ -235,3 +235,16 @@ print(top_n(listWithNumber, 3))
 print(top_n(listWithNumberSecond, 2))
 
 print('---')
+
+# funkcja, która policzy wszystkie brakujące wartości None w liście.
+
+listWithNone = [1, None, None, 5, None, 2]
+
+def count_none (listNone):
+    listCount = [no for no in listNone if no == None]
+
+    return len(listCount)
+
+print(count_none(listWithNone))
+
+print('---')
