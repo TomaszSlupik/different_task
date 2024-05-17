@@ -304,3 +304,19 @@ print(f"Today's special is the {item_name}, which normally costs ${item_price:.2
 print(f"But for a limited time, you can get it for ${item_count:.2f} ({(item_discount * 100) :.0f}% off)!")
 
 print('---')
+
+# Program powinien następnie wydrukować w konsoli komunikat zawierający te informacje:
+brand = 'Ford'
+model = 'Mustang'
+year = 2021
+color = 'Red'
+mileage = 5000
+
+print('CAR DETAILS')
+print(f'Make: {brand}')
+print(f'Model: {model}')
+print(f'Year: {year}')
+print(f'Color: {color}')
+print(f'Mileage: {mileage} miles')
+
+print('---')
