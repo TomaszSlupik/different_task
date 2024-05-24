@@ -29,3 +29,17 @@ except KeyError:
     print('Failed')
 
 print('---')
+
+
+# Wydrukowanie wieku danej osoby
+age_str = 'Pawel'
+
+try:
+    number = int(age_str)
+    print(f'Success! The number is: {number}')
+except ValueError:
+    print('Unable to convert the string to an integer.')
+finally:
+     print('The program has finished executing.')
+
+print('---')
