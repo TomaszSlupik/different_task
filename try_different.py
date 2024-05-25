@@ -43,3 +43,16 @@ finally:
      print('The program has finished executing.')
 
 print('---')
+
+
+# Znaleźć na którym miejscu znajduje się liczba podana przez usera
+numbers = [1, 2, 3, 4, 5]
+user_input = 10
+
+try:
+    indexUser = numbers.index(user_input)
+    print(indexUser)
+except IndexError:
+    print('Index is out of range of the list.')
+except:
+    print('An unknown error occurred.')
